@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+	<listeners>
+		<!-- <listener class-name="listener.MyISuiteListener" /> -->
+		<listener class-name="listener.MyITestListener" />
+<!-- 		<listener class-name="listener.MyIAnnotationTransformer" />
+		<listener class-name="listener.MyMultipleListener" /> -->
+	</listeners>
+	<parameters>
+		<parameter  name="retryAnalyzer" value="MyIRetryAnalyzer.class"/>
+	</parameters>
+	
+	<test name="Test">
+		<parameter name="retryAnalyzer"	value="MyIRetryAnalyzer.class" />
+		<classes>
+			<class name="test.baidu.HomePageTest" />
+			<!-- <class name="test.email.Te" /> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

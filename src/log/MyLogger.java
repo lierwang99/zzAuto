@@ -22,7 +22,7 @@ import test.baidu.Reflect;
  */
 public class MyLogger {
 
-	private static String logFilePath = "H:" + File.separator + "logs" + File.separator;
+	private static String logFilePath = "logs" + File.separator;
 //	控制日志打印等级，默认是接收Logger传过来的所有等级日志
 	private static Level HANDLERLEVEL = Level.ALL;
 
